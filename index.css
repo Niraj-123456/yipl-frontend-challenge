@@ -1,0 +1,142 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F2F2;
+    color: white;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.HeroImage {
+    position: relative;
+    background-image: url("public/images/img_hero-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1500.74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeroText{
+    position: absolute;
+    left: 17%;
+    top: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+
+.HeroText h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.HeroText p{
+    position: absolute;
+    top: 80%;
+    width: 630px;
+    height: 70px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 50;
+}
+
+.ApplyNowBtn {
+    position: absolute;
+    top: 150%;
+    height: 67px;
+    width: 192px;
+    background: #27AD6C;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.9);
+    border-radius: 4px;
+    border: 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ApplyNowBtn img {
+    margin-left: 10px;
+}
+
+nav {
+    position: absolute;
+    top:50px;
+    left: 0;
+    height: 60px;
+    width: 1440px;
+    background-color: #0F1110 transparent;
+    display: flex;
+    align-items: center;
+}
+
+.Logo{
+    display: flex;
+}
+
+.Logo img{
+    padding: 3px;
+    margin-left: 56px;
+}
+
+.LogoText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 16px;
+}
+
+.LogoText p {
+    padding: 0;
+    margin:0;
+    text-transform: uppercase;
+    color: #88C542;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.LogoText p > span {
+    letter-spacing: 8px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.MenuItem {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: calc(70% - 43px/2 - 73px);
+}
+
+.MenuItem a {
+    display: flex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    line-height: 18.75px;
+}
+
+.MenuItem a[class="active"] {
+    color: #70C919;
+}
+
+.MenuItem a img{
+    height: 14px;
+} 
