@@ -182,7 +182,7 @@ nav {
 
 .Resource{
     position: relative;
-    width: 50%;
+    width: 100%;
 }
 
 .Resource::after {
@@ -303,4 +303,38 @@ nav {
     width: 44px;
     height: 44px;
     color: #88C542;
+}
+
+.RandomPhotosSection {
+    position: absolute;
+    top: 355%;
+    left: 0%;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color: #9B9B9B;
+    font-weight: normal;
+}
+
+.RandomPhotosSection h2 {
+    font-style: normal;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.RandomPhotosSection p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+    
+}
+
+.FoodPhotoSection {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.FoodPhotoSection img{
+    width: 480px;
+    height: 400px;
 }
