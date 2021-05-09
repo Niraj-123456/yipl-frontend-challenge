@@ -310,7 +310,7 @@ nav {
     top: 355%;
     left: 0%;
     width: 100%;
-    height: 50%;
+    height: auto;
     text-align: center;
     color: #9B9B9B;
     font-weight: normal;
@@ -330,6 +330,7 @@ nav {
 }
 
 .FoodPhotoSection {
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -337,4 +338,103 @@ nav {
 .FoodPhotoSection img{
     width: 480px;
     height: 400px;
+}
+
+.WhatWeProvideSec {
+    position: absolute;
+    top: 512%;
+    left: 0;
+    height: 1350px;
+    width: 100%;
+    background-color: #423633;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.WhatWeProvideSec h1 {
+    margin-top: calc(45% - 48px/2 - 404.5px);
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.Services {
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ServicesList {
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.5px;
+    margin-bottom: 50px;
+}
+
+.ServicesList img {
+    width: 50px;
+    height: 50px;
+}
+
+.TextSec {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 150px;
+    width: 330px;
+    margin-left: 10px;
+    margin-top: 20px;
+    line-height: 24px;
+}
+
+.TextSec h6 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.TextSec p {
+    font-size: 16px;
+    opacity: 0.5;
+    margin-top: -50px;
+}
+
+.LastLogo {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    background-blend-mode: luminosity;
+}
+
+.LastLogo img{
+    height: 40px;
+    width: 40px;
+}
+
+.Footer {
+    position: absolute;
+    top: 728%;
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.Copyright {
+    margin-left: 60px;
+    display: flex;
+    flex: 1;
+}
+
+.links {
+    
+}
+
+.links a {
+    padding: 0 15px;
+    text-decoration: none;
+    color: white;
 }
