@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     height: 1200px;
+    width: 100%;
 }
 
 .HeroImage {
@@ -68,6 +69,10 @@ body {
     cursor: pointer;
 }
 
+.HeroText a {
+    text-decoration: none;
+}
+
 .ApplyNowBtn:hover {
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.9);
     background: #70C919;
@@ -124,14 +129,14 @@ nav {
     bottom: -6px;
     content: '';
     height: 2px;
-    background-color: white;
+    background-color: #70C919;
     transform-origin: left center;
     opacity: 0;
     transform: scaleX(0);
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 }
 
-.MenuItem a:hover + .MenuItem a::after {
+.MenuItem a:hover::after {
     transform: scaleX(1);
     opacity: 1;
 }
@@ -279,7 +284,7 @@ nav {
     font-size: 48px;
     width: 441px;
     height: 56px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .FrontendLinks a {
@@ -314,7 +319,7 @@ nav {
     align-items: center;
     position: absolute;
     top: 335%;
-    left: 38.3%;
+    left: 37%;
     margin-bottom: 50px;
 }
 
@@ -405,7 +410,7 @@ nav {
 .ServicesList {
     display: flex;
     align-items: center;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     margin-bottom: 50px;
 }
 
@@ -420,13 +425,13 @@ nav {
     text-align: left;
     height: 150px;
     width: 330px;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: 20px;
     line-height: 24px;
 }
 
 .TextSec h6 {
-    font-size: 18px;
+    font-size: 17px;
     text-transform: uppercase;
 }
 
