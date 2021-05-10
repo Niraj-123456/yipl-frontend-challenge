@@ -11,6 +11,8 @@ body {
 .HeroImage {
     position: relative;
     background-image: url('public/images/img_hero-image@2x.png');
+    /* background-blend-mode: soft-light; */
+    mix-blend-mode: darken;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -344,7 +346,7 @@ nav {
     position: absolute;
     top: 512%;
     left: 0;
-    height: 1350px;
+    height: 1300px;
     width: 100%;
     background-color: #423633;
     text-align: center;
@@ -400,8 +402,8 @@ nav {
 
 .LastLogo {
     position: absolute;
-    top: 90%;
-    left: 50%;
+    top: 92%;
+    left: 46%;
     background-blend-mode: luminosity;
 }
 
@@ -412,12 +414,13 @@ nav {
 
 .Footer {
     position: absolute;
-    top: 728%;
+    top: 720%;
     height: 70px;
     width: 100%;
-    background-color: black;
+    background-color: #333333;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
@@ -430,7 +433,7 @@ nav {
 }
 
 .links {
-    
+    margin-right: 50px;
 }
 
 .links a {

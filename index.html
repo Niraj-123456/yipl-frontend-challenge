@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
 
+    <!-- <script src="index.js"></script> -->
+
     <!--Google Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
@@ -207,7 +209,7 @@
                 </div>
             </div>
         </div>
-        <button class="ApplyNowBtn" style="margin-top: 100px; position: absolute; left:45%;">Apply Now <img src="public/images/ic_arrow.png"/></button>
+        <button class="ApplyNowBtn" style="margin-top: 100px; position: absolute; left:40%;">Apply Now <img src="public/images/ic_arrow.png"/></button>
         <div class="LastLogo">
             <img src="public/images/ic_separator_frontend-ninja.png" />
         </div>
@@ -216,7 +218,7 @@
     <!--Footer-->
     <div class="Footer">
         <div class="Copyright">
-            <p>© Copyright 2017</p>
+            <p>© Copyright <span id="Date"></span></p>
         </div>
         <div class="links">
             <a href="#">Home</a>
@@ -226,3 +228,11 @@
     </div>
 </body>
 </html>
+
+
+
+<!--JavaScript for date--> 
+<script>
+    var date = new Date().getFullYear();
+    document.getElementById("Date").innerHTML = date;
+</script>
