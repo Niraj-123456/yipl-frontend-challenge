@@ -10,8 +10,8 @@ nav {
 .FormSec {
     position: absolute;
     top: 60%;
-    left: 25%;
-    width: 50%;
+    left: 30%;
+    width: 45%;
     color:#27AD6C;
     background-color: rgba(200, 200, 200, 0.5);
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
@@ -24,7 +24,7 @@ nav {
 
 .FormContainer {
     padding: 16px;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 label {
@@ -32,18 +32,25 @@ label {
     font-weight: 400;
 }
 
-input[type=text] {
-    height: 20px;
+input[type=text], select, textarea {
+    height: 45px;
     width: 400px;
     border-radius: 4px;
     padding: 10px;
     margin: 5px 0 22px 0;
+    box-sizing: border-box;
     display: flex;
     border: 0.5px solid #04AA6D;
     background: #f1f1f1;
 }
 
-input[type=text]:focus {
+textarea {
+    height: 150px;
+    resize: none;
+    padding: 12px 20px;
+}
+
+input[type=text]:focus, textarea:focus, select:focus {
     background-color: #ddd;
     outline: none;
 }
@@ -51,7 +58,6 @@ input[type=text]:focus {
 .Buttons button{
     color: white;
     padding: 14px 20px;
-    margin: 8px 5px;
     border: none;
     cursor: pointer;
     width: auto;
@@ -64,6 +70,7 @@ input[type=text]:focus {
 }
 
 .ApplyBtn {
+    margin-right: 10px;
     background-color: #04AA6D;
 }
 
@@ -73,5 +80,5 @@ input[type=text]:focus {
 
 .Footer {
     position: absolute;
-    top: 190%;
+    top: 230%;
 }

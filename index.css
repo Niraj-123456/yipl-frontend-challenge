@@ -17,6 +17,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 1500.74px;
+    min-width: 500px;
     height: 800px;
     background-color: #0F1110;
     display: flex;
