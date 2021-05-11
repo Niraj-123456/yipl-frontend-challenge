@@ -1,3 +1,2 @@
-// var date = new Date().getFullYear();
-// document.getElementById("date").innerHTML="Hello World";
-// console.log(date);
+var date = new Date().getFullYear();
+document.getElementById("Date").innerHTML = date;
