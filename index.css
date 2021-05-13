@@ -491,7 +491,11 @@ nav {
     color: #88C542;
 }
 
-.SearchClick input{
+.SearchClick{
     display: none;
-    /* height: 2px;*/
+}
+
+.Show {
+    display: block;
+    transition: all 250ms;
 }

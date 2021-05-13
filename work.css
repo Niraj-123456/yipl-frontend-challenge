@@ -1,0 +1,76 @@
+.HeroImage {
+    position: relative;
+    height: 300px;
+}
+
+.WorkSec h1{
+    color: #4A4A4A;
+    text-align: center;
+    margin-top:50px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.WorkSec {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+}
+
+.WorkSecList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.WorkSecImg {
+    margin-left: -100px;
+    width: 50%;
+    
+}
+
+.WorkSecImg img{
+    margin-left: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.WorkSecDesc {
+    margin-left: 40px;
+    width: 50%;
+    color: #4A4A4A;
+}
+
+.ClientSec{
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    color: #4A4A4A;
+    align-items: center;
+    justify-content: center;
+}
+
+.ClientSecList {
+    margin-left: 50px;
+}
+
+.ClientSecList img {
+    margin-left: 20%;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.ClientMsg {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.Footer {
+    position: absolute;
+    top: 400%;
+}

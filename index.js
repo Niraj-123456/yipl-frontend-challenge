@@ -18,7 +18,7 @@ $(function(){
 $('.Search').click(function(e){
     e.preventDefault();
     $('.Link').hide();
-    $('.SearchClick', 'input').show();
+    $('.SearchClick').addClass('Show');
 })
 
 // $(document).ready(function(){
