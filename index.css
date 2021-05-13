@@ -123,6 +123,10 @@ nav {
     position: relative;
 }
 
+.Active{
+    display: none;
+}
+
 .MenuItem a::after {
     position: absolute;
     left: 5px;
@@ -142,7 +146,7 @@ nav {
     opacity: 1;
 }
 
-.MenuItem a[class="active"] {
+.MenuItem a.active {
     color: #70C919;
 }
 
@@ -485,4 +489,9 @@ nav {
 
 .links a:hover {
     color: #88C542;
+}
+
+.SearchClick input{
+    display: none;
+    /* height: 2px;*/
 }

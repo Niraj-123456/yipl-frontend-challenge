@@ -11,8 +11,12 @@
     <!--Google Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Home</title>
 </head>
 <body>
@@ -33,13 +37,16 @@
             <img src="public/images/logo_frontend-ninja.png" alt="Logo" />
         </div>
         <div class="MenuItem">
-            <a href="#" class="active">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/work.html">Work</a>
-            <a href="/contact.html">Contact</a>
-            <a href="#">
+            <a href="/index.html" class="Link active">Home</a>
+            <a href="/about.html" class="Link">About</a>
+            <a href="/work.html" class="Link">Work</a>
+            <a href="/contact.html" class="Link">Contact</a>
+            <a href="#" class="Search" onClick="Search()">
                 <img src="public/images/ic_search.png" alt="search">
             </a>
+            <div class="SearchClick">
+                <input type="text" name="search" id="search">
+            </div>
         </div>   
     </nav>
 
@@ -230,7 +237,8 @@
         </div> 
     </div>
 
-    <!--JavaScript for footer date--> 
+    <!--JavaScript--> 
     <script src="index.js"></script>
+    
 </body>
 </html>
