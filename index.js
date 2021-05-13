@@ -15,12 +15,12 @@ $(function(){
     });
 });
 
-$('.Search').click(function(e){
-    e.preventDefault();
-    $('.Link').hide();
-    $('.SearchClick').addClass('Show');
+$(document).ready(function(){
+    $('.SearchClick').hide();
+    $('.Search').click(function(e){
+        e.preventDefault();
+        // $('MenuItem').hide();
+        $('.SearchClick').toggle();
+        $('.SearchClick>input').css('transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 5s;');
+    })
 })
-
-// $(document).ready(function(){
-//     $('.SearchClick').hide();
-// })
