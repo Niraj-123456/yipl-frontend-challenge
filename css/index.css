@@ -27,14 +27,15 @@ body {
 
 .HeroText {
     position: absolute;
-    left: 15%;
-    top: 32%;
+    left: 0%;
+    top: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: top;
     font-style: normal;
     text-align: center;
+    width: 100%;
 }
 
 .HeroText h1 {
@@ -79,6 +80,7 @@ body {
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.9);
     background: #70C919;
     transition: all 250ms;
+    transform: scale(0.98);
 }
 
 .ApplyNowBtn img {
@@ -90,10 +92,11 @@ nav {
     top:50px;
     left: 0;
     height: 60px;
-    width: 1440px;
+    width: 100%;
     background-color: #0F1110 transparent;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .Logo{
@@ -106,8 +109,8 @@ nav {
 }
 
 .MenuItem, .SearchClick {
-    position: absolute;
-    left: calc(70% - 43px/2 - 73px);
+    /* position: absolute;
+    left: calc(70% - 43px/2 - 73px); */
 }
 
 .MenuItem a {
@@ -120,6 +123,19 @@ nav {
     padding: 10px 20px;
     line-height: 18.75px;
     position: relative;
+}
+
+.MenuItem .Search::before{
+    content: '';
+    background-color: #70C919;
+    height: 50px;
+    width: 100px;
+    transform-origin: right center;
+    /* transform: scaleX(0); */
+}
+
+.MenuItem .Search:hover::before{
+    transform: scaleX(1);
 }
 
 .Active{
