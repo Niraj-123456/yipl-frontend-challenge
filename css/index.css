@@ -94,6 +94,10 @@ nav {
     margin-left: 56px;
 }
 
+.MenuItem {
+    margin-right: 25px;
+}
+
 .MenuItem a {
     font-style: normal;
     font-weight: normal;
@@ -170,7 +174,7 @@ nav {
     width: 300px;
     max-width: 100%;
     height: 196px;
-    margin-bottom: 160px;
+    margin-bottom: 100px;
 }
 
 .Card .CardImage h4{
@@ -356,6 +360,7 @@ nav {
 .FoodPhotoSection {
     margin-top: 40px;
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -407,7 +412,7 @@ nav {
     width: 330px;
     margin-left: 5px;
     margin-top: 20px;
-    line-height: 24px;
+    line-height: 10px;
 }
 
 .TextSec h6 {
@@ -521,6 +526,7 @@ nav {
     .ApplyNowBtn img {
         height: 10px;
         width: 10px;
+        margin-left: 5px;
     }
 
     .HeroImage .HeroText p {
@@ -535,7 +541,78 @@ nav {
         justify-content: center;
     }
 
+    nav .MenuItem {
+        margin-right: 0;
+    }
+
     nav .MenuItem a {
         font-size: 15px;
+    }
+
+    nav .MenuItem a img {
+        height: 12px;
+    }
+
+    .BoldText {
+        height: 100px;
+        margin-top: 50px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .Card {
+        margin: 0;
+    }
+
+    .RandomPhotosSection .FoodPhotoSection { 
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .RandomPhotosSection .FoodPhotoSection img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .WhatWeProvideSec {
+        height: 100%;
+    }
+
+    .WhatWeProvideSec > h1 {
+        font-size: 30px;
+        margin: 0;
+        height: 50px;
+        padding: 30px 0 10px 0;
+    }
+
+    .Services {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .ServicesList {
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    
+    .ServicesList img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .TextSec {
+        height: 100px;
+        width: 250px;
+        line-height: 15px;
+    }
+
+    .TextSec h6 {
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+    
+    .TextSec p {
+        font-size: 10px;
+        opacity: 0.5;
+        margin-top: -30px;
     }
 }
