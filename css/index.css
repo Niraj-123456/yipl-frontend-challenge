@@ -5,7 +5,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    height: 1200px;
+    height: 100%;
     width: 100%;
 }
 
@@ -29,11 +29,6 @@ body {
     position: absolute;
     left: 0%;
     top: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: top;
-    font-style: normal;
     text-align: center;
     width: 100%;
 }
@@ -41,21 +36,19 @@ body {
 .HeroText h1 {
     font-weight: bold;
     font-size: 80px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .HeroText p {
-    margin-top: -10px;
-    width: 630px;
-    max-width: 100%;
-    height: 70px;
+    width: 47%;
+    margin: auto;
     letter-spacing: 1px;
     font-size: 18px;
     line-height: 27px;
 }
 
 .ApplyNowBtn {
-    margin-top: 35px;
+    margin-top: 40px;
     height: 67px;
     width: 192px;
     background: #27AD6C;
@@ -66,9 +59,6 @@ body {
     color: white;
     font-size: 15px;
     letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
 }
 
@@ -76,7 +66,7 @@ body {
     text-decoration: none;
 }
 
-.ApplyNowBtn:hover {
+.ApplyNowBtn:hover{
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.9);
     background: #70C919;
     transition: all 250ms;
@@ -99,18 +89,9 @@ nav {
     justify-content: space-between;
 }
 
-.Logo{
-    /* display: flex; */
-}
-
-.Logo img{
+.Logo img {
     padding: 3px;
     margin-left: 56px;
-}
-
-.MenuItem, .SearchClick {
-    /* position: absolute;
-    left: calc(70% - 43px/2 - 73px); */
 }
 
 .MenuItem a {
@@ -138,11 +119,7 @@ nav {
     transform: scaleX(1);
 }
 
-.Active{
-    display: none;
-}
-
-.MenuItem a::after {
+.MenuItem a::after{
     position: absolute;
     left: 5px;
     right: 0px;
@@ -156,7 +133,7 @@ nav {
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 }
 
-.MenuItem a:hover::after {
+.MenuItem a:hover::after, .links a:hover::after {
     transform: scaleX(1);
     opacity: 1;
 }
@@ -170,8 +147,7 @@ nav {
 }
 
 .BoldText {
-    position: absolute;
-    top: 140%;
+    margin-top: 150px;
     width: 100%;
     color: #9B9B9B;
     font-size: 48px;
@@ -180,28 +156,28 @@ nav {
 }
 
 .Card {
-    position: absolute;
-    top: 170%;
-    left: 150px;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-@media screen and (max-width: 600px) {
-    .Card, .Container {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
+    margin-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 .CardImage{
     width: 300px;
     max-width: 100%;
     height: 196px;
-    margin-right: 80px;
+    margin-bottom: 160px;
 }
 
-.CardImage:hover {
+.Card .CardImage h4{
+    color: #27AD6C;
+}
+
+.CardImage img:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -209,20 +185,7 @@ nav {
     margin-right: 50px;
 }
 
-.Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2px 16px;
-}
-
-.Container h4 {
-    color: #27AD6C;
-}
-
-.Container p {
+.Card .CardImage p {
     width: 300px;
     height: 90px;
     font-size: 14px;
@@ -232,25 +195,26 @@ nav {
 }
 
 .Resources {
-    position: absolute;
-    top: 240%;
-    left: 5%;
+    margin-top: 100px;
     display: flex;
-    width: 85%;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
 }
 
 .Resource{
     position: relative;
-    width: 100%;
+    width: 40%;
+    margin-left: 5%;
 }
 
 .Resource::after {
     position: absolute;
-    top: 12%;
-    left: 170%;
+    top: 10%;
+    left: 112%;
     content: '';
     width: 0;
-    height: 400px;
+    height: 410px;
     border: 1px solid #88C542;
 }
 
@@ -266,6 +230,8 @@ nav {
 }
 
 .ResourceLinks {
+    display: flex;
+    flex-direction: column;
     margin-left: 5%;
 }
 
@@ -275,7 +241,6 @@ nav {
     font-size: 16px;
     line-height: 40px;
     color: #27AD6C;
-    display: block;
     padding: 12px;
     margin-bottom: 30px;
     text-decoration: none;
@@ -295,13 +260,13 @@ nav {
 }
 
 .ResourceLinkOptions{
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
 .FrontendLatest {
-    width: 50%;
-    margin-left: 30%;
+    width: 40%;
+    margin-left: 12%;
 }
 
 .Frontend h2 {
@@ -344,21 +309,12 @@ nav {
 .FrontendNinjaLogo{
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 335%;
-    left: 37%;
-    margin-bottom: 50px;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
 }
 
-.FrontendNinjaLogo::before{
-    margin-top: 10px;
-    content: '';
-    width: 123px;
-    height: 1px;
-    border: 1px solid #88C542;
-    background-color: #88C542;
-}
-
+.FrontendNinjaLogo::before,
 .FrontendNinjaLogo::after{
     margin-top: 10px;
     content: '';
@@ -376,11 +332,9 @@ nav {
 }
 
 .RandomPhotosSection {
-    position: absolute;
-    top: 355%;
-    left: 0%;
     width: 100%;
     height: auto;
+    margin-top: 150px;
     text-align: center;
     color: #9B9B9B;
     font-weight: normal;
@@ -411,9 +365,7 @@ nav {
 }
 
 .WhatWeProvideSec {
-    position: absolute;
-    top: 512%;
-    left: 0;
+    margin: 0;
     height: 1300px;
     width: 100%;
     background-color: #423633;
@@ -422,8 +374,9 @@ nav {
     font-weight: normal;
 }
 
-.WhatWeProvideSec h1 {
-    margin-top: calc(45% - 48px/2 - 404.5px);
+.WhatWeProvideSec > h1 {
+    margin: 0;
+    padding: 150px 0 50px 0;
     font-size: 48px;
     line-height: 48px;
 }
@@ -469,9 +422,7 @@ nav {
 }
 
 .LastLogo {
-    position: absolute;
-    top: 92%;
-    left: 50%;
+    margin-top: 110px;
     filter: grayscale(100%);
 }
 
@@ -481,8 +432,6 @@ nav {
 }
 
 .Footer {
-    position: absolute;
-    top: 720%;
     height: 70px;
     width: 100%;
     background-color: #333333;
@@ -504,13 +453,14 @@ nav {
     margin-right: 50px;
 }
 
-.links a {
+.Links a {
     padding: 0 15px;
     text-decoration: none;
     color: white;
+    transition: ease-in 0.1s;
 }
 
-.links a:hover {
+.Links a:hover {
     color: #88C542;
 }
 
@@ -522,8 +472,10 @@ nav {
 
 .SearchClick > input{
     width: 345px;
-    border: 2px solid #88C542;
-    border-radius: 4px;
+    border: none;
+    border-bottom: 2px solid #88C542;
+    outline: none;
+    background-color: transparent;
 }
 
 .SearchClick a {
@@ -537,6 +489,53 @@ nav {
     height: 17px;
 }
 
-.Show {
-    display: block;
+/* Tablets and under */
+@media(max-width: 768px){
+
+}
+
+/* Mobile devices*/
+@media(max-width: 500px){
+    .HeroImage {
+        width: 100%;
+        height: 350px;
+    }
+
+    .HeroImage .HeroText {
+        margin-top: 20px;
+    }
+    .HeroImage .HeroText h1 {
+        font-size: 20px;
+    }
+
+    .HeroImage .HeroText p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .ApplyNowBtn{
+        height: 40px;
+        width: 110px;
+        font-size: 8px;
+    }
+    .ApplyNowBtn img {
+        height: 10px;
+        width: 10px;
+    }
+
+    .HeroImage .HeroText p {
+        margin: auto;
+        width: 50%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav .MenuItem a {
+        font-size: 15px;
+    }
 }
