@@ -3,24 +3,39 @@
     height: 300px;
 }
 
+.lead {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    color: #9B9B9B;
+}
+
+.lead p {
+    padding: 30px;
+    font-size: 24px;
+}
+
 .FormSec {
-    position: absolute;
-    top: 60%;
-    left: 30%;
+    width: 100%;
+}
+
+.FormSec form {
     width: 45%;
     color:#27AD6C;
     background-color: rgba(200, 200, 200, 0.5);
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
+    margin: 100px auto;
 }
 
 .FormSec h2 {
+    padding: 20px 0;
     text-align: center;
 }
 
 .FormContainer {
     padding: 16px;
-    margin-left: 10%;
+    margin: 0 10%;
 }
 
 label {
@@ -30,7 +45,7 @@ label {
 
 input[type=text], select, textarea {
     height: 45px;
-    width: 400px;
+    width: 450px;
     border-radius: 4px;
     padding: 10px;
     margin: 5px 0 22px 0;
@@ -75,7 +90,52 @@ input[type=text]:focus, textarea:focus, select:focus {
     background-color: red;
 }
 
-.Footer {
-    position: absolute;
-    top: 230%;
+/* Tablets and upper*/
+@media(max-width: 768px) {
+
+}
+
+/* Mobile */
+@media(max-width: 500px) {
+    .lead {
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        color: #9B9B9B;
+    }
+    
+    .lead p {
+        padding: 20px;
+        font-size: 12px;
+    }
+    .FormSec form {
+        margin-top: 50px;
+        width: 80%;
+    }
+
+    .FormSec h2{
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input[type=text], select, textarea {
+        height: 40px;
+        width: 220px;
+        font-size: 12px;
+    }
+
+    option[value] {
+        font-size: 12px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    form p {
+        font-size: 13px;
+    }
 }
