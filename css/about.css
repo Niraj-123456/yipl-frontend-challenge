@@ -6,25 +6,21 @@
 .Team, .About, .TeamContainer {
     color: #4A4A4A;
     line-height: 22px;
+    width: 100%;
+    text-align: center;
     
 }
 
-.Team h2, .About h2 {
-  text-align: center;
-}
-
 .About p {
-  width: 70%;
-  margin-left: 15%;
   opacity: 0.78;
-  text-align: center;
+  margin: auto;
+  width: 80%;
 }
 
 
 .Team {
-    position: absolute;
-    top: 100%;
-    left: 1%;
+    width: 100%;
+    margin-top: 100px;
 }
 
 .Row {
@@ -81,14 +77,24 @@
   transition: all 250ms;
 }
 
-@media screen and (max-width: 650px) {
-  .Column {
-    width: 100%;
-    display: block;
-  }
+/* Tablets and upper*/
+@media(max-width: 768px){
+
 }
 
-.Footer {
-  position: absolute;
-  top: 220%;
+/* Mobiles */
+@media(max-width: 500px){
+  .Row {
+    flex-wrap: wrap;
+  }
+
+  .Column {
+    margin: auto;
+    width: 300px;
+  }
+
+  .TeamContainer{
+    margin: auto;
+    width: 250px;
+  }
 }
