@@ -40,11 +40,11 @@ background-color: #70C919;
 
 /* Style the container/contact section */
 .ContactContainer {
-    border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
     box-sizing: content-box;
     margin-top: 5%;
+    width: 100%;
 }
 
 /* Create two columns that float next to eachother */
@@ -69,15 +69,20 @@ background-color: #70C919;
     clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-.Column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-}
+.Footer {
+    margin-top: 20px;
 }
 
-.Footer {
-    position: absolute;
-    top: 200%;
+/* Tablets & upper*/
+@media(max-width: 768px) {
+
+}
+
+/* Mobile */
+@media(max-width: 500px) {
+    .Row {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }
