@@ -409,10 +409,10 @@ nav {
     flex-direction: column;
     text-align: left;
     height: 150px;
-    width: 330px;
+    width: 65%;
     margin-left: 5px;
     margin-top: 20px;
-    line-height: 10px;
+    line-height: 25px;
 }
 
 .TextSec h6 {
@@ -423,7 +423,7 @@ nav {
 .TextSec p {
     font-size: 16px;
     opacity: 0.5;
-    margin-top: -50px;
+    margin-top: -60px;
 }
 
 .LastLogo {
@@ -543,6 +543,8 @@ nav {
 
     nav .MenuItem {
         margin-right: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 10px 0;
     }
 
     nav .MenuItem a {
@@ -562,6 +564,94 @@ nav {
 
     .Card {
         margin: 0;
+    }
+
+    .Resources {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .ResourceLinks {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-left: 50px;
+    }
+
+    .Resource, .FrontendLatest{
+        width: 100%;
+        margin: 0;
+    }
+
+    .Resource::after {
+        display: none;
+    }
+
+    .Resource h2 {
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .ResourceLinkOptions img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .ResourceLinkOptions a {
+        font-size: 12px;
+        line-height: 10px;
+    }
+
+    .FrontendLatest .Frontend > h2 {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .FrontendLinks a{
+        font-size: 12px;
+        line-height: 5px;
+        text-align: center;
+    }
+
+    .FrontendLinks span {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .FrontendNinjaLogo{
+        margin-top: 50px;
+    }
+
+    .FrontendNinjaLogo img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .FrontendNinjaLogo::after,
+    .FrontendNinjaLogo::before{
+        width: 100px;
+        height: 0.5px;
+        border: 1px solid #88C542;
+        background-color: #88C542;
+    }
+
+    .RandomPhotosSection {
+        margin-top: 50px;
+    }
+
+    .RandomPhotosSection h1 {
+        font-size: 30px;
+    }
+
+    .RandomPhotosSection p {
+        font-size: 15px;
     }
 
     .RandomPhotosSection .FoodPhotoSection { 
@@ -614,5 +704,26 @@ nav {
         font-size: 10px;
         opacity: 0.5;
         margin-top: -30px;
+    }
+
+    .LastLogo {
+        margin-top: 20px;
+    }
+
+    .LastLogo img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .Footer {
+        font-size: 12px;
+    }
+
+    .Footer .Copyright {
+        margin-left: 20px;
+    }
+
+    .Footer .Links a {
+        padding: 5px;
     }
 }
