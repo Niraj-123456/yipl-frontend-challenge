@@ -496,7 +496,62 @@ nav {
 
 /* Tablets and under */
 @media(max-width: 768px){
+    .HeroImage .HeroText p {
+        font-size: 14px;
+        line-height: 20px;
+    }
 
+    .Resource h2 {
+        font-size: 40px;
+        margin: auto;
+        line-height: 15px;
+    }
+
+    .ResourceLinkOptions a {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .Resource::after {
+        top: 0%;
+        height: 380px;
+    }
+
+    .FrontendLatest .Frontend > h2 {
+        font-size: 40px;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .FrontendLinks {
+        line-height: 5px;
+    }
+
+    .FrontendLinks a{
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .FrontendLinks span {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .RandomPhotosSection .FoodPhotoSection img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .TextSec h6 {
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    
+    .TextSec p {
+        font-size: 14px;
+        opacity: 0.5;
+        margin-top: -40px;
+    }
 }
 
 /* Mobile devices*/

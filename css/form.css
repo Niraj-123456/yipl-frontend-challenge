@@ -92,7 +92,10 @@ input[type=text]:focus, textarea:focus, select:focus {
 
 /* Tablets and upper*/
 @media(max-width: 768px) {
-
+    .FormSec form {
+        margin-top: 50px;
+        width: 80%;
+    }
 }
 
 /* Mobile */
