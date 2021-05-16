@@ -77,6 +77,10 @@
   transition: all 250ms;
 }
 
+.Footer {
+  margin-top: 50px;
+}
+
 /* Tablets and upper*/
 @media(max-width: 768px){
 

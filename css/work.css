@@ -12,9 +12,8 @@
 }
 
 .WorkSec {
-    position: absolute;
-    top: 60%;
     width: 100%;
+    margin-top: 200px;
 }
 
 .WorkSecList {
@@ -22,23 +21,27 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-}
-
-.WorkSecImg {
-    margin-left: -100px;
-    width: 50%;
-    
+    width: 100%;
 }
 
 .WorkSecImg img{
-    margin-left: 25%;
+    height: 300px;
+    width: 350px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .WorkSecDesc {
-    margin-left: 40px;
-    width: 50%;
     color: #4A4A4A;
+    margin: 0 50px;
+}
+
+.WorkSecDesc p{
+    width: 600px;
+}
+
+.Client {
+    width: 100%;
+    margin-top: 100px;
 }
 
 .ClientSec{
@@ -71,6 +74,71 @@
 }
 
 .Footer {
-    position: absolute;
-    top: 400%;
+    margin-top: 100px;
+}
+
+/* Tablets and under */
+@media(max-width: 768px){
+
+}
+
+/* Mobile devices*/
+@media(max-width: 500px){
+    .WorkSec {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .WorkSec h1 {
+        font-size: 30px;
+    }
+
+    .WorkSecList {
+        width: 100%;
+
+    }
+
+    .WorkSecList .WorkSecImg{
+        width: 50%;
+    }
+
+    .WorkSecList .WorkSecImg img{
+        width: 120px;
+        height: 100px;
+        margin: 0 10px;
+    }
+
+    .WorkSecList .WorkSecDesc {
+        width: 50%;
+    }
+
+    .WorkSecList .WorkSecDesc p{
+        width: auto;
+        font-size: 10px;
+    }
+
+    .ClientSec {
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .Client h1 {
+        font-size: 30px;
+    }
+
+    .ClientSecList {
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+
+    .ClientSecList .ClientMsg {
+        font-size: 12px;
+    }
+
+    .ClientSecList img {
+        height: 50px;
+        width: 50px;
+        margin: 0 150px;
+        border: solid 1px black;
+    }
 }
