@@ -115,12 +115,19 @@ nav {
     background-color: #70C919;
     height: 50px;
     width: 100px;
-    transform-origin: right center;
+    /* transform-origin: right center; */
     /* transform: scaleX(0); */
 }
 
-.MenuItem .Search:hover::before{
-    transform: scaleX(1);
+.MenuItem input {
+    /* display: none; */
+    height: 20px;
+    width:250px;
+    border: none;
+    border-bottom: solid 1px #70C919;
+    outline: none;
+    background-color: transparent;
+    transition-property: width 2s;
 }
 
 .MenuItem a::after{

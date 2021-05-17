@@ -16,10 +16,9 @@ $(function(){
 });
 
 $(document).ready(function(){
-    $('.SearchClick').hide();
     $('.Search').click(function(e){
         e.preventDefault();
-        // $('MenuItem').hide();
-        $('.SearchClick').toggle();
+        $('.MenuItem input').toggle();
+
     })
 })
