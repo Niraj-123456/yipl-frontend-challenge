@@ -119,15 +119,14 @@ nav {
     /* transform: scaleX(0); */
 }
 
-.MenuItem input {
-    /* display: none; */
+nav .MenuItem > input {
+    display: none;
     height: 20px;
     width:250px;
     border: none;
     border-bottom: solid 1px #70C919;
     outline: none;
     background-color: transparent;
-    transition-property: width 2s;
 }
 
 .MenuItem a::after{

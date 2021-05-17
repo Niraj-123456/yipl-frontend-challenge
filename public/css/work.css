@@ -24,6 +24,15 @@
     width: 100%;
 }
 
+.WorkSecImg {
+    opacity: 0;
+    /* animation: slideInFromLeft 1s ease-in; */
+}
+
+.WorkSecImg.animate__animated {
+    opacity: 1;
+}
+
 .WorkSecImg img{
     height: 300px;
     width: 350px;
@@ -33,6 +42,7 @@
 .WorkSecDesc {
     color: #4A4A4A;
     margin: 0 50px;
+    /* animation: slideInFromRight 1s ease-in; */
 }
 
 .WorkSecDesc p{
@@ -75,6 +85,24 @@
 
 .Footer {
     margin-top: 100px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* Tablets and under */

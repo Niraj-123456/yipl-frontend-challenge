@@ -20,5 +20,11 @@ $(document).ready(function(){
         e.preventDefault();
         $('.MenuItem input').toggle();
 
-    })
-})
+    });
+
+    $('.WorkSec').waypoint(function(direction){
+        $('.WorkSecImg').addClass('animate__animated animate__backInLeft')
+    },{
+        offset: '50%'
+    });
+});

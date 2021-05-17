@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="public/css/index.css">
     <link rel="stylesheet" href="public/css/work.css">
 
+    <!--Animate.css cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <title>Our Work</title>
 </head>
 <body>
@@ -27,12 +30,10 @@
             <a href="/about.html" class="Link">About</a>
             <a href="/work.html" class="Link">Work</a>
             <a href="/contact.html" class="Link">Contact</a>
+            <input type="text" name="search" placeholder="Search..."/>
             <a href="#" class="Search" onClick="Search()">
                 <img src="public/images/ic_search.png" alt="search">
             </a>
-            <div class="SearchClick">
-                <input type="text" name="search" id="search">
-            </div>
         </div>   
     </nav>
 
@@ -54,6 +55,9 @@
             </div>  
         </div>
         <div class="WorkSecList">
+            <div class="WorkSecImg">
+                <img src="public/images/img_food-photos_2.png">
+            </div>
             <div class="WorkSecDesc">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repudiandae 
                     debitis exercitationem iusto aliquid suscipit sapiente, voluptatum beatae 
@@ -64,9 +68,6 @@
                     distinctio omnis.
                 </p>
             </div> 
-            <div class="WorkSecImg">
-                <img src="public/images/img_food-photos_2.png">
-            </div>
         </div>
         <div class="WorkSecList">
             <div class="WorkSecImg">
@@ -127,5 +128,10 @@
 
     <!--JavaScript--> 
     <script src="public/js/index.js"></script>
+
+    <!--JavaScript for scroll animation-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" 
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
