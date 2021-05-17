@@ -24,6 +24,7 @@ $(document).ready(function(){
 
     $('.WorkSec').waypoint(function(direction){
         $('.WorkSecImg').addClass('animate__animated animate__backInLeft')
+        $('.WorkSecDesc').addClass('animate__animated animate__backInRight')
     },{
         offset: '50%'
     });
