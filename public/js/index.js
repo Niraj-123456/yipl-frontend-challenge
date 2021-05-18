@@ -28,4 +28,29 @@ $(document).ready(function(){
     },{
         offset: '50%'
     });
+
+    $('.Card').waypoint(function(direction){
+        $('.CardImage').addClass('animate__animated animate__backInUp')
+    },{
+        offset: '50%'
+    });
+
+    $('.RandomPhotosSection').waypoint(function(direction){
+        $('.FoodPhotoSection img').addClass('animate__animated animate__zoomIn')
+    },{
+        offset: '50%'
+    });
+
+    $('.Resources').waypoint(function(direction){
+        $('.Resource').addClass('animate__animated animate__backInLeft')
+        $('.FrontendLatest').addClass('animate__animated animate__backInRight')
+    },{
+        offset: '50%'
+    });
+
+    $('.Services').waypoint(function(direction){
+        $('.ServicesList').addClass('animate__animated animate__zoomIn')
+    },{
+        offset: '50%'
+    })
 });
